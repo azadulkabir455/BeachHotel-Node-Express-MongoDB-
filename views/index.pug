@@ -1,4 +1,41 @@
 extends base
 
 block content
-    h1 helow world.
+    nav.navbar
+        div.logo
+            img(src="public/img/navlogo.png", alt="siteLogo" )
+        div.navigation
+            div.topbar
+                div.leftTopbar
+                    ul
+                        li #[img(src="public/img/location.png", alt="")] Via Grotta 52, Rimini, Italy
+                        li #[img(src="public/img/mail.png", alt="")] info349@gmail.com
+                        li #[img(src="public/img/phone.png", alt="")] +88 8937837
+                        
+                div.rightTopbar
+                    button(type="button") #[a(href="#",title="Contact Us") Contact Us]
+            div.menu
+                div.leftMenu
+                    ul
+                        li #[a(href="/") Home]
+                        li #[a(href="#") Rooms]
+                        li #[a(href="#") Spa]
+                        li #[a(href="#") Restaurant]
+                        li #[a(href="#") Contact]
+                div.rightMenu
+                    div.dropdown
+                        button(type="button") En
+                        div.dropdownContent
+                            ul
+                                li English
+                                li Bangla
+                                li Hindi
+    section.header
+        video(autoplay, loop, muted)
+            source(src="public/video/backgroundVIdeo.mp4")
+        div.overlay
+            div.overlayText
+                p WELCOME OUR DEAR GUESTS
+                h1 Quality time near the beach
+                button(type="button") About the spot
+                button(type="button") Our offers

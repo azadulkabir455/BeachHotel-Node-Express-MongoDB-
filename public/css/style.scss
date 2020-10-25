@@ -1,3 +1,22 @@
-body {
-    background-color: yellow;
+@import "variable&mixin";
+@import "navbar"; 
+
+.header {
+    position:relative;
+    overflow: hidden;
+    video {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        display: block;
+    }
+    .overlay {
+        position: absolute;
+        top:0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        background-color: rgba(9, 9, 24, 0.452);
+    }
 }

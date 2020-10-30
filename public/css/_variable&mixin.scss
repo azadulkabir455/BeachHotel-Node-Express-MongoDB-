@@ -1,12 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
 * {
     margin:0;
     padding:0;
     box-sizing: border-box;
 }
 
-$headingFont: "playfair display";
-$paragraphFont: sans-serif;
+$headingFont: 'Playfair Display', serif;
+$paragraphFont: 'Quicksand', sans-serif;
 $headingFontColor: #121212;
 $paragraphFontColor:#242424;
 $primaryColor: #b35e18;
 $secondaryColor: #48b79b;
+
+%paragraphFont{
+    font-family: $headingFont;
+    font-size: 14px;
+    font-weight: 500;
+    color: $primaryColor;
+    line-height: 24px;
+    text-align: center;
+}
+@mixin paragraphFont() {
+    font-family: $headingFont;
+    @content;
+}
